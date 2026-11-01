@@ -1,0 +1,17 @@
+{
+  "id": "thesis_a4",
+  "name_ko": "학위논문 (A4, 본문 폭 150mm 기준)",
+  "width_mm": 120,
+  "height_mm": 90,
+  "font": "Batang",
+  "title_font_size": 11,
+  "tick_font_size": 10,
+  "legend_font_size": 9,
+  "line_width": 1.5,
+  "symbol_size": 6,
+  "dpi": 600,
+  "export_format": "emf",
+  "verified": false,
+  "source": "A4 좌우 여백 30mm 관행(본문 폭 150mm)에서 산출한 초깃값",
+  "notes": "학교별 학위논문 작성 지침(그림 크기·글꼴·캡션 위치)으로 확인 후 수정"
+}

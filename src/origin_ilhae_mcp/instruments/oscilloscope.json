@@ -1,0 +1,4 @@
+{"id": "oscilloscope", "name": "오실로스코프 CSV (Tektronix / Rigol / Keysight InfiniiVision)",
+ "match_any": ["Record Length", "Sample Interval", "Tektronix", "RIGOL", "Increment", "InfiniiVision", "TIME,CH"],
+ "delimiter": ",",
+ "notes": "구형 Tektronix(TDS)처럼 메타데이터가 왼쪽 열에 섞인 형식은 아직 미지원. 샘플 확보 후 추가."}

@@ -1,0 +1,14 @@
+{
+ "id": "keithley",
+ "name": "Keithley SMU (KickStart / TSP / LabVIEW CSV)",
+ "match_any": [
+  "Keithley",
+  "KickStart",
+  "smua.",
+  "smub.",
+  "Model 24",
+  "Model 26"
+ ],
+ "delimiter": null,
+ "notes": "헤더·메타데이터 위치는 자동 탐지. 실제 샘플로 검증 필요."
+}

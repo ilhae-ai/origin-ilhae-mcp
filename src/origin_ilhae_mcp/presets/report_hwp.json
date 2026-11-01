@@ -1,0 +1,17 @@
+{
+  "id": "report_hwp",
+  "name_ko": "보고서 (한글 HWP, A4)",
+  "width_mm": 150,
+  "height_mm": 100,
+  "font": "Malgun Gothic",
+  "title_font_size": 11,
+  "tick_font_size": 10,
+  "legend_font_size": 10,
+  "line_width": 1.5,
+  "symbol_size": 6,
+  "dpi": 300,
+  "export_format": "emf",
+  "verified": false,
+  "source": "한글 기본 A4 편집 용지의 좌우 여백(각 30mm) 기준 본문 폭",
+  "notes": "기관 보고서 서식(과제 보고서 양식 등)이 있으면 그 기준으로 수정. EMF는 HWP에서 확대해도 선명함"
+}

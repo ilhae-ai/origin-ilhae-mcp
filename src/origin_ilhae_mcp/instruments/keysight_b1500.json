@@ -1,0 +1,4 @@
+{"id": "keysight_b1500", "name": "Keysight B1500 (EasyEXPERT CSV)",
+ "match_any": ["DataName", "SetupTitle", "PrimitiveTest", "EasyEXPERT"],
+ "delimiter": ",", "row_prefix": {"header": "DataName", "data": "DataValue"},
+ "notes": "각 행 앞의 DataName/DataValue 표지를 떼고 읽는다. 실제 내보내기 샘플로 검증 필요."}

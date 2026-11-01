@@ -1,0 +1,58 @@
+[project]
+name = "origin-ilhae-mcp"
+version = "0.1.0"
+description = "Windows용 OriginLab Origin(2021+) MCP 서버 — 한국 환경·물리/전자공학 워크플로우 최적화"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "GAEBAL AI" }]
+keywords = ["mcp", "originlab", "origin", "claude", "korean", "physics", "data-analysis"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Natural Language :: Korean",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+dependencies = [
+    "mcp>=2.3,<3",
+    "numpy>=1.24",
+    "scipy>=1.10",
+]
+
+[project.optional-dependencies]
+# Windows에서 COM 대체 경로를 쓰려면 필요 (브리지만 쓸 때는 불필요)
+windows = [
+    "originpro>=1.1.10; sys_platform == 'win32'",
+    "pywin32>=306; sys_platform == 'win32'",
+]
+# 인코딩 자동 판별 정확도 향상 (없어도 UTF-8/CP949 판별은 동작)
+encoding = ["charset-normalizer>=3"]
+
+[project.urls]
+Homepage = "https://github.com/ilhae-ai/origin-ilhae-mcp"
+Documentation = "https://github.com/ilhae-ai/origin-ilhae-mcp/blob/main/docs/설치가이드.md"
+Issues = "https://github.com/ilhae-ai/origin-ilhae-mcp/issues"
+
+[project.scripts]
+origin-ilhae-mcp = "origin_ilhae_mcp.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/origin_ilhae_mcp"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "docs", "skills", "README.md", "LICENSE"]
+exclude = ["docs/origin-mcp-review.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

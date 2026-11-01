@@ -1,0 +1,17 @@
+{
+  "id": "presentation_169",
+  "name_ko": "발표 자료 (16:9 슬라이드)",
+  "width_mm": 240,
+  "height_mm": 135,
+  "font": "Malgun Gothic",
+  "title_font_size": 20,
+  "tick_font_size": 18,
+  "legend_font_size": 16,
+  "line_width": 2.5,
+  "symbol_size": 9,
+  "dpi": 200,
+  "export_format": "png",
+  "verified": false,
+  "source": "16:9 슬라이드에 크게 넣는 경우의 가독성 기준 초깃값",
+  "notes": "뒷자리에서도 보이도록 글꼴 18pt 이상 권장"
+}

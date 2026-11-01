@@ -1,0 +1,17 @@
+{
+  "id": "kr_journal_single",
+  "name_ko": "국내 학회지 1단 그림",
+  "width_mm": 85,
+  "height_mm": 64,
+  "font": "Malgun Gothic",
+  "title_font_size": 8,
+  "tick_font_size": 7,
+  "legend_font_size": 7,
+  "line_width": 1.0,
+  "symbol_size": 4,
+  "dpi": 600,
+  "export_format": "tif",
+  "verified": false,
+  "source": "2단 편집 학술지의 일반적인 1단 폭(약 8.5cm) 관행",
+  "notes": "투고할 학회지의 저자 안내(Author Guidelines)로 확인 후 수정"
+}
